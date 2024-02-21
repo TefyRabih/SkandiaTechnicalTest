@@ -1,0 +1,69 @@
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="col-lg-auto col-md-12 mb-6 mb-lg-0">
+      <!-- Botón de hamburguesa -->
+      <span class="navbar-toggler-icon">
+        <button
+          (click)="toggleMenu()"
+          class="btn"
+          type="button"
+        ></button>
+      </span>
+    </div>
+    <div class="col-lg col-md-12 mx-3 mb-lg-0">
+      <!-- Logo -->
+      <a class="navbar-brand">
+        <img
+          src="assets/img/skandia.svg"
+          alt="Logo"
+          width="119"
+          height="20"
+          class="d-inline-block align-text-top me-2"
+        />
+        <span class="navbar-text mx-2"> | </span>
+        Plan Financiero Digital - FPX
+      </a>
+    </div>
+    <div class="col-lgs">
+      <div class="d-flex justify-content-end mr-5">
+        <a class="text-navbar me-3">
+          <img
+            src="assets/img/happy.svg"
+            alt="happy"
+            width="24"
+            height="24"
+            class="d-inline-block align-text-top me-2"
+          />
+          Tu Financial Planner
+        </a>
+        <a class="text-navbar me-3">
+          <img
+            src="assets/img/hand3.svg"
+            alt="hand3"
+            width="24"
+            height="24"
+            class="d-inline-block align-text-top me-2"
+          />
+          Aportes
+        </a>
+        <a class="text-navbar" (click)="showTextQuestions()">
+          <img
+            src="assets/img/compFaq.svg"
+            alt="hand3"
+            width="24"
+            height="24"
+            class="d-inline-block align-text-top me-2"
+          />
+        </a>
+        <span
+          class="text-navbar"
+          [style.opacity]="showQuestions ? '0' : '1'"
+          style="transition: opacity 0.3s; vertical-align: top"
+          >Preguntas <br />
+          Frecuentes</span
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+<app-menu [isMenuOpen]="isMenuOpen"></app-menu>

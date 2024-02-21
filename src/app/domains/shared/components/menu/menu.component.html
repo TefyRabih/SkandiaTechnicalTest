@@ -1,0 +1,12 @@
+<aside id="sidebar" [ngClass]="{'open': isMenuOpen}">
+  <div class="sidebar">
+    <ul class="sidebar-nav">
+      <li class="sidebar-item" *ngFor="let item of items" [ngClass]="{'selected': item.selected}">
+        <a href="#" class="sidebar-link" (click)="selectItem(item)">
+          <img [src]="item.icon" alt="{{item.text}}" class="sidebarImg fa-solid fa-list pe-2">
+          <span class="sidebarItemText">{{item.text}}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</aside>
