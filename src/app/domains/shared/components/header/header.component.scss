@@ -1,6 +1,5 @@
 .navbar{
-  margin-top: 28px;
-  margin-bottom: 30px;
+  margin-top: 10px;
   align-items: self-end;
 }
 .offcanvas.show {
@@ -9,6 +8,9 @@
 
 .text-question{
   margin-right: 32px;
+}
+.card-body{
+  justify-content: space-between;
 }
 .text-navbar{
 color: #00C83C;

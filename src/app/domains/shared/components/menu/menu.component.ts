@@ -10,8 +10,7 @@ import { Component, HostListener, Input, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit  {
   selectedItem: string = '';
-  @Input() isMenuOpen = false;
-
+  @Input() isMenuOpen : boolean = false;
 
   items: Array<any> = [
     {
